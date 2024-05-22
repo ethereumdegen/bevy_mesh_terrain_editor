@@ -23,6 +23,8 @@ pub use egui;
 #[doc(inline)]
 pub use bevy_editor_pls_default_windows as default_windows;
 
+
+
 /// Commonly used types and extension traits
 pub mod prelude {
     pub use crate::{AddEditorWindow, EditorPlugin};
@@ -111,6 +113,8 @@ impl Plugin for EditorPlugin {
 
         app.add_plugins(StandardWindowsPlugin {});
 
+          app.add_plugins(ExtWindowsPlugin {});
+
         // if !app.is_plugin_added::<bevy_framepace::FramepacePlugin>() {
         //     app.add_plugins(bevy_framepace::FramepacePlugin);
         //     app.add_plugins(bevy_framepace::debug::DiagnosticsPlugin);
@@ -130,8 +134,8 @@ impl Plugin for EditorPlugin {
             use bevy_editor_pls_default_windows::resources::ResourcesWindow;
             use bevy_editor_pls_default_windows::lighting::LightingWindow;
 
-            use bevy_editor_pls_default_windows::doodads::DoodadsWindow;
-            use bevy_editor_pls_default_windows::zones::ZoneWindow;
+            use bevy_editor_pls_ext::doodads::DoodadsWindow;
+            use bevy_editor_pls_ext::zones::ZoneWindow;
 
             app.add_editor_window::<HierarchyWindow>();
             app.add_editor_window::<AssetsWindow>();

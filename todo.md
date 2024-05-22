@@ -7,7 +7,7 @@
 
 ## Immediate todo 
 
--  
+-  add snap dimensions to doodads -- use a particular key for relative snap 
 - organize doodads in  tag folders 
 - add doodad bundles (house) 
 

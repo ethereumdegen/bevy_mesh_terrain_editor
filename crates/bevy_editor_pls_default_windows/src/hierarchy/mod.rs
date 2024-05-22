@@ -22,7 +22,8 @@ use bevy_editor_pls_core::{
 use crate::add::{add_ui, AddWindow, AddWindowState};
 use crate::debug_settings::DebugSettingsWindow;
 use crate::inspector::{InspectorSelection, InspectorWindow};
-use crate::zones::{ZoneComponent, ZoneEvent};
+
+use bevy_editor_pls_ext::zones::{ZoneComponent, ZoneEvent};
 
 #[derive(Component)]
 pub struct HideInEditor;

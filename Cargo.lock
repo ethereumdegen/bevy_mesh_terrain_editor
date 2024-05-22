@@ -754,6 +754,7 @@ dependencies = [
  "bevy 0.13.2",
  "bevy_editor_pls_core",
  "bevy_editor_pls_default_windows",
+ "bevy_editor_pls_ext",
  "bevy_mod_raycast",
  "egui 0.26.2",
  "egui-gizmo",
@@ -796,12 +797,21 @@ dependencies = [
 name = "bevy_editor_pls_ext"
 version = "0.8.2"
 dependencies = [
+ "anyhow",
+ "base64",
  "bevy 0.13.2",
  "bevy-inspector-egui 0.23.4",
+ "bevy_common_assets",
  "bevy_editor_pls_core",
  "bevy_editor_pls_default_windows",
+ "bevy_mod_picking",
+ "bevy_mod_raycast",
+ "bevy_mod_sysfail 7.0.0",
  "egui_dock",
  "indexmap",
+ "rand",
+ "ron",
+ "serde",
 ]
 
 [[package]]
@@ -1221,6 +1231,7 @@ dependencies = [
  "bevy_editor_pls",
  "bevy_editor_pls_core",
  "bevy_editor_pls_default_windows",
+ "bevy_editor_pls_ext",
  "bevy_egui 0.25.0",
  "bevy_foliage_paint",
  "bevy_magic_fx",

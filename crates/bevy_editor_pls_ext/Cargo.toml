@@ -7,7 +7,29 @@ license.workspace = true
 [dependencies]
 bevy = { version = "0.13", default-features = false }
 bevy_editor_pls_core.workspace = true
-bevy_editor_pls_default_windows.workspace = true
+ bevy_editor_pls_default_windows.workspace = true
 bevy-inspector-egui.workspace = true
 indexmap = "2"
 egui_dock.workspace = true
+
+
+rand = "0.8"
+
+bevy_mod_picking = "0.18.0" 
+
+bevy_mod_raycast = { version= "0.17.0"    }
+
+
+serde = { version = "1", features = ["derive"] }
+  
+
+
+
+ bevy_common_assets = {version="0.10.0", features= ["ron"]}
+ 
+
+ron = "0.8.1"
+base64="0.21.6"
+
+anyhow.workspace = true 
+bevy_mod_sysfail.workspace = true 
